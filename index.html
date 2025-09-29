@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carita con Alarma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Selecciona tiempo</h1>
+  <select id="timeSelect">
+    <option value="1">1 minuto</option>
+    <option value="5">5 minutos</option>
+    <option value="15">15 minutos</option>
+    <option value="30">30 minutos</option>
+    <option value="60">60 minutos</option>
+  </select>
+  <button onclick="startTimer()">Iniciar</button>
+
+  <div id="face" onclick="stressFace()">😌</div>
+  <div class="timer" id="timeRemaining">--:--</div>
+
+  <audio id="bgMusic" src="PSYLOKID - Orion.mp3" preload="auto" loop></audio>
+  <audio id="goatSound" src="https://www.soundjay.com/animal/goat-scream-1.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
